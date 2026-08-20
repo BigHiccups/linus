@@ -1,0 +1,28 @@
+{
+  "name": "linus-advocacia",
+  "version": "1.0.0",
+  "description": "Linus Serviços Jurídicos - Website oficial",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigHiccups/linus.git"
+  },
+  "keywords": [
+    "linus",
+    "advocacia",
+    "juridico"
+  ],
+  "author": "Linus Serviços Jurídicos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigHiccups/linus/issues"
+  },
+  "homepage": "https://github.com/BigHiccups/linus#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
