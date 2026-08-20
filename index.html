@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linus Serviços Jurídicos | Dra. Lilian Oliveira Nunes Manso</title>
+    <meta name="description" content="Linus – Serviços Jurídicos. Seu problema jurídico precisa de direção. Análise estratégica e atuação jurídica para proteger seus direitos, patrimônio e interesses.">
+    
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MEASUREMENT_ID');
+    </script>
+
+    <!-- Google Fonts (Playfair Display for Titles, Plus Jakarta Sans for Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#F9F7F2',          /* Crema / Porcelana Quente */
+                        brandCardBg: '#FFFFFF',      /* Branco puro para cards */
+                        brandPrimary: '#0E303D',     /* Azul-Petróleo Profundo e Imponente */
+                        brandPrimaryDark: '#071D25',
+                        brandAccent: '#C85A32',      /* Terracota Quente (Gera contraste e vida) */
+                        brandAccentHover: '#AA4723',
+                        brandGold: '#C5A059',        /* Dourado Champanhe elegante */
+                        brandGoldLight: '#F5EFE0',
+                        brandSecondary: '#4A6055',   /* Verde Musgo Sobrio */
+                        brandNeutral: '#E8E3D8',     /* Areia / Fendi suave */
+                        brandText: '#1C2226',        /* Grafite Escuro para leitura confortável */
+                        brandMuted: '#5C656C',       /* Cinza médio */
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F9F7F2;
+            color: #1C2226;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .custom-shadow {
+            box-shadow: 0 12px 35px -10px rgba(14, 48, 61, 0.08);
+        }
+
+        .accent-gradient {
+            background: linear-gradient(135deg, #0E303D 0%, #17485B 100%);
+        }
+
+        .cta-gradient {
+            background: linear-gradient(135deg, #C85A32 0%, #B24B25 100%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brandAccent selection:text-white">
+
+    <!-- Top Information Bar -->
+    <div class="bg-brandPrimary text-white text-xs py-2.5 px-4 border-b border-brandGold/30">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-brandGold mr-1.5"></i> Goiânia / GO • Atendimento 100% Online em todo o Brasil</span>
+                <span class="hidden md:inline text-white/30">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-shield-halved text-brandGold mr-1.5"></i> OAB/GO 29.296</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://instagram.com/linusjur" target="_blank" rel="noopener noreferrer" class="hover:text-brandGold transition flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-brandGold"></i> @linusjur
+                </a>
+                <span class="text-white/30">|</span>
+                <a href="mailto:linusjuridico@gmail.com" class="hover:text-brandGold transition hidden sm:inline">
+                    <i class="fa-regular fa-envelope text-brandGold mr-1"></i> linusjuridico@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-brandBg/95 backdrop-blur-md border-b border-brandNeutral/80 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 m-5">
+                
+                <!-- Logo & Brand Header -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="assets/logo.png" 
+                         onerror="this.src='https://placehold.co/180x50/0E303D/C5A059?text=LINUS+JURIDICO'" 
+                         alt="Logo Linus Serviços Jurídicos" 
+                         class="h-20 w-auto object-contain rounded-lg border border-brandGold/40">
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-brandPrimary">
+                    <a href="#inicio" class="hover:text-brandAccent transition">LINUS</a>
+                    <a href="#atuacao" class="hover:text-brandAccent transition">ATUAÇÃO</a>
+                    <a href="#sobre" class="hover:text-brandAccent transition">SOBRE</a>
+                    <a href="#conteudos" class="hover:text-brandAccent transition">CONTEÚDOS</a>
+                    <a href="#contato" class="hover:text-brandAccent transition">CONTATO</a>
+                </nav>
+
+                <!-- High-Contrast CTA Button -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Linus%20Servi%C3%A7os%20Jur%C3%ADdicos%20e%20gostaria%20de%20falar%20com%20a%20advogada." target="_blank" rel="noopener noreferrer" class="cta-gradient hover:bg-brandAccentHover text-white px-5 py-2.5 rounded-lg text-sm font-bold transition shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        FALAR COM A ADVOGADA
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 text-brandPrimary rounded-lg focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandBg border-b border-brandNeutral px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" onclick="toggleMobileMenu()" class="block py-2 text-brandPrimary font-semibold border-b border-brandNeutral">LINUS</a>
+            <a href="#atuacao" onclick="toggleMobileMenu()" class="block py-2 text-brandPrimary font-semibold border-b border-brandNeutral">ATUAÇÃO</a>
+            <a href="#sobre" onclick="toggleMobileMenu()" class="block py-2 text-brandPrimary font-semibold border-b border-brandNeutral">SOBRE</a>
+            <a href="#conteudos" onclick="toggleMobileMenu()" class="block py-2 text-brandPrimary font-semibold border-b border-brandNeutral">CONTEÚDOS</a>
+            <a href="#contato" onclick="toggleMobileMenu()" class="block py-2 text-brandPrimary font-semibold">CONTATO</a>
+            <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Linus%20Servi%C3%A7os%20Jur%C3%ADdicos%20e%20gostaria%20de%20falar%20com%20a%20advogada." target="_blank" rel="noopener noreferrer" class="w-full mt-4 bg-brandAccent text-white text-center py-3 rounded-lg font-bold flex items-center justify-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                FALAR COM A ADVOGADA
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative py-16 lg:py-24 overflow-hidden border-b border-brandNeutral/80 bg-gradient-to-b from-brandBg via-white to-brandBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brandGoldLight border border-brandGold/40 text-brandPrimary px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-brandAccent"></span>
+                        Análise Estratégica & Defesa Patrimonial
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-brandPrimary leading-tight">
+                        Seu problema jurídico precisa de <span class="text-brandAccent italic font-normal underline decoration-brandGold decoration-2">direção</span>.
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-brandMuted font-normal leading-relaxed">
+                        Análise estratégica e atuação jurídica resolutiva para proteger seus direitos, seu patrimônio e seus interesses. Atendimento humanizado, firme e 100% online.
+                    </p>
+
+                    <!-- Key Stats / Badges with Color Accents -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="p-4 bg-white rounded-xl border-l-4 border-l-brandAccent border border-brandNeutral shadow-sm">
+                            <span class="block text-2xl sm:text-3xl font-serif font-bold text-brandPrimary">15 Anos</span>
+                            <span class="text-xs text-brandMuted uppercase tracking-wider font-semibold">de Experiência</span>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border-l-4 border-l-brandGold border border-brandNeutral shadow-sm">
+                            <span class="block text-2xl sm:text-3xl font-serif font-bold text-brandAccent">100%</span>
+                            <span class="text-xs text-brandMuted uppercase tracking-wider font-semibold">Online no Brasil</span>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1 p-4 bg-white rounded-xl border-l-4 border-l-brandPrimary border border-brandNeutral shadow-sm">
+                            <span class="block text-xl font-serif font-bold text-brandPrimary">OAB/GO</span>
+                            <span class="text-xs text-brandMuted uppercase tracking-wider font-semibold">nº 29.296</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Buttons (Equal Sizes) -->
+                    <div class="flex flex-col sm:flex-row items-stretch gap-4 pt-4">
+                        <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20an%C3%A1lise%20estrat%C3%A9gica%20do%20meu%20caso." target="_blank" rel="noopener noreferrer" class="cta-gradient hover:bg-brandAccentHover text-white px-6 py-4 rounded-xl font-bold transition text-center shadow-lg hover:shadow-xl flex items-center justify-center gap-3 text-base flex-1">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            Agendar Análise pelo WhatsApp
+                        </a>
+                        <a href="#atuacao" class="bg-white hover:bg-brandNeutral/40 text-brandPrimary px-6 py-4 rounded-xl font-bold transition text-center border-2 border-brandPrimary/20 shadow-sm flex items-center justify-center flex-1">
+                            Conhecer Áreas de Atuação
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Editorial Photo & Badge Repositioned -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Photo Frame with Petrol/Terracotta Highlights -->
+                        <div class="relative rounded-2xl overflow-hidden bg-white border-2 border-brandGold/40 p-2 sm:p-3 shadow-2xl">
+                            <div class="relative aspect-[4/5] rounded-xl overflow-hidden group">
+                                <img src="assets/lilian-two.png" 
+                                     onerror="this.src='https://placehold.co/600x750/0E303D/FFFFFF?text=Dra.+Lilian+Manso'" 
+                                     alt="Dra. Lilian Oliveira Nunes Manso" 
+                                     class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                                
+                                <div class="absolute inset-0 bg-gradient-to-t from-brandPrimary/90 via-brandPrimary/30 to-transparent flex flex-col justify-end p-6 text-white">
+                                    <span class="font-serif font-bold text-2xl text-white tracking-wide">Dra. Lilian O. N. Manso</span>
+                                    <span class="text-xs text-brandGold font-semibold uppercase tracking-widest mt-1">Advogada • OAB/GO 29.296</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accent Floating Badge (Moved to Right Side) -->
+                        <div class="absolute -bottom-12 -right-2 sm:-right-6 bg-brandAccent text-white p-4 rounded-xl shadow-xl max-w-xs hidden sm:block border border-white/20 z-10">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-scale-balanced text-3xl text-brandGoldLight"></i>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brandGoldLight">Atuação Firme & Próxima</p>
+                                    <p class="text-xs opacity-90">Transformando problemas em soluções claras.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação Section -->
+    <section id="atuacao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandAccent font-bold text-xs uppercase tracking-widest block mb-2">Especialidades e Foco de Atuação</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brandPrimary">Áreas de Atuação Estratégica</h2>
+                <div class="w-16 h-1.5 bg-brandAccent mx-auto my-4 rounded-full"></div>
+                <p class="text-brandMuted">
+                    O Linus – Serviços Jurídicos atua na defesa de direitos e na preservação patrimonial com linguagem clara, agilidade técnica e planejamento individualizado.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Practice Card 1: Tributário & Execuções Fiscais -->
+                <div class="bg-brandBg rounded-2xl p-6 border-2 border-brandNeutral hover:border-brandAccent transition-all hover:-translate-y-1.5 shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brandPrimary text-brandGold flex items-center justify-center text-xl mb-6 shadow-md group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif text-brandPrimary mb-3 group-hover:text-brandAccent transition-colors">Direito Tributário & Defesas Fiscais</h3>
+                        <ul class="space-y-2.5 text-sm text-brandMuted mb-6">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Defesa em Execuções Fiscais</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Defesas fiscais administrativas e judiciais</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Proteção patrimonial contra cobranças indevidas</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Planejamento e análise de passivos tributários</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20uma%20quest%C3%A3o%20de%20Execu%C3%A7%C3%A3o%20Fiscal/Direito%20Tribut%C3%A1rio." target="_blank" class="inline-flex items-center text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider">
+                        Consultar Caso tributário <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Practice Card 2: Direito Imobiliário -->
+                <div class="bg-brandBg rounded-2xl p-6 border-2 border-brandNeutral hover:border-brandAccent transition-all hover:-translate-y-1.5 shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brandPrimary text-brandGold flex items-center justify-center text-xl mb-6 shadow-md group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif text-brandPrimary mb-3 group-hover:text-brandAccent transition-colors">Direito Imobiliário</h3>
+                        <ul class="space-y-2.5 text-sm text-brandMuted mb-6">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Análise de risco em compra e venda</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Regularização de imóveis urbanos e rurais</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Proteção da posse e propriedade</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Assessoria para transações imobiliárias</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20em%20Direito%20Imobili%C3%A1rio." target="_blank" class="inline-flex items-center text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider">
+                        Consultar Imobiliário <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Practice Card 3: Família e Sucessões / Inventários -->
+                <div class="bg-brandBg rounded-2xl p-6 border-2 border-brandNeutral hover:border-brandAccent transition-all hover:-translate-y-1.5 shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brandPrimary text-brandGold flex items-center justify-center text-xl mb-6 shadow-md group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif text-brandPrimary mb-3 group-hover:text-brandAccent transition-colors">Família & Inventários</h3>
+                        <ul class="space-y-2.5 text-sm text-brandMuted mb-6">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Inventários Judiciais e em Cartório</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Planejamento sucessório familiar</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Divórcios e partilha de bens</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Condução humanizada de conflitos</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20Invent%C3%A1rio%20ou%20Direito%20de%20Fam%C3%ADlia." target="_blank" class="inline-flex items-center text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider">
+                        Consultar Família/Inventário <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Practice Card 4: Consumidor / Veículos em Leilão -->
+                <div class="bg-brandBg rounded-2xl p-6 border-2 border-brandNeutral hover:border-brandAccent transition-all hover:-translate-y-1.5 shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brandPrimary text-brandGold flex items-center justify-center text-xl mb-6 shadow-md group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-serif text-brandPrimary mb-3 group-hover:text-brandAccent transition-colors">Consumidor & Leilões</h3>
+                        <ul class="space-y-2.5 text-sm text-brandMuted mb-6">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Regularização de veículos de leilão</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Desembaraço documental e pendências</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Defesa em Relações de Consumo</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs"></i> Solução de travamentos administrativos</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Tenho%20um%20ve%C3%ADculo%20adquirido%20em%20leil%C3%A3o%20e%20preciso%20de%20regulariza%C3%A7%C3%A3o." target="_blank" class="inline-flex items-center text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider">
+                        Consultar Leilões <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 border-t border-b border-brandNeutral/80 bg-brandBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Professional Credentials -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border-2 border-brandNeutral shadow-md space-y-6">
+                        
+                        <!-- Professional Editorial Photo -->
+                        <div class="relative aspect-square rounded-xl overflow-hidden border border-brandGold/40 shadow-inner group">
+                            <img src="assets/lilian-one.png" 
+                                 onerror="this.src='https://placehold.co/600x600/0E303D/FFFFFF?text=Dra.+Lilian+Manso'" 
+                                 alt="Dra. Lilian Oliveira Nunes Manso em seu escritório" 
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brandPrimaryDark/85 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
+                                <span class="font-serif font-bold text-lg text-white">Lilian Oliveira Nunes Manso</span>
+                                <span class="text-xs text-brandGold font-bold tracking-wider uppercase">OAB/GO nº 29.296</span>
+                            </div>
+                        </div>
+
+                        <!-- Quick Credentials -->
+                        <div class="space-y-3 pt-2 text-xs text-brandText font-medium">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <span>Graduada em Direito pela <strong>PUC Goiás</strong></span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <span>Estrutura de Atendimento <strong>100% Digital e Seguro</strong></span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brandAccent/10 text-brandAccent flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <span>Atuação Nacional com Sede em <strong>Goiânia / GO</strong></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column: Biography & Manifesto -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-brandAccent font-bold text-xs uppercase tracking-widest block">Sobre a Condução</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brandPrimary leading-tight">Prazer, eu sou Lilian Oliveira Nunes Manso.</h2>
+                    
+                    <p class="text-base text-brandText leading-relaxed">
+                        Sou advogada, formada pela PUC Goiás e inscrita na <strong>OAB/GO nº 29.296</strong>. Goiana, construí minha trajetória profissional com sólida experiência na advocacia e atuação em diferentes áreas do Direito.
+                    </p>
+
+                    <p class="text-base text-brandText leading-relaxed">
+                        Ao longo dessa caminhada, aprendi que, por trás de cada processo, contrato, cobrança, imóvel, inventário ou conflito familiar, existe uma pessoa tentando resolver algo que é de extrema importância para sua vida.
+                    </p>
+
+                    <!-- Editorial Quote Block -->
+                    <div class="p-6 bg-white border-l-4 border-brandAccent rounded-r-xl my-4 italic text-brandPrimary font-serif text-lg leading-relaxed shadow-md border border-brandNeutral">
+                        "É por isso que escolhi construir o <strong>Linus</strong>. Uma advocacia próxima, estratégica e personalizada, na qual o cliente não precisa enfrentar sozinho a complexidade do Direito. Aqui, procuro entender primeiro, explicar com clareza e, então, definir o caminho jurídico mais adequado para cada situação."
+                    </div>
+
+                    <p class="text-base text-brandPrimary font-bold leading-relaxed bg-brandGoldLight/60 p-4 rounded-xl border border-brandGold/30">
+                        <i class="fa-solid fa-quote-left text-brandAccent mr-2"></i> Ser acolhedora não significa ser passiva. Significa estar perto o suficiente para entender — e preparada o suficiente para agir.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="https://wa.me/5562994693150?text=Ol%C3%A1%20Dra.%20Lilian,%20li%20sua%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="cta-gradient hover:bg-brandAccentHover text-white px-6 py-3.5 rounded-xl font-bold text-sm transition inline-flex items-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Conversar Diretamente com a Advogada
+                        </a>
+                        <a href="https://instagram.com/linusjur" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-brandNeutral/30 text-brandPrimary border-2 border-brandPrimary/20 px-5 py-3.5 rounded-xl font-bold text-sm transition inline-flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-brandAccent text-lg"></i> Siga @linusjur
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona a Advocacia Online -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandAccent font-bold text-xs uppercase tracking-widest block mb-2">Simplicidade & Agilidade</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brandPrimary">Como funciona a Advocacia Online?</h2>
+                <p class="text-brandMuted mt-3">Você resolve suas demandas jurídicas sem precisar sair de casa ou se afastar dos seus compromissos, com total validade e transparência.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-brandBg p-8 rounded-2xl border-2 border-brandNeutral relative shadow-sm hover:border-brandAccent transition-colors">
+                    <span class="text-5xl font-serif font-bold text-brandGold/40 absolute top-4 right-6">01</span>
+                    <div class="w-12 h-12 rounded-xl bg-brandAccent text-white flex items-center justify-center font-bold text-lg mb-6 shadow-md">1</div>
+                    <h3 class="text-xl font-bold font-serif text-brandPrimary mb-2">Primeiro Contato Direto</h3>
+                    <p class="text-sm text-brandMuted leading-relaxed">Você entra em contato via WhatsApp. Sem robôs ou intermediários, enviando um resumo simples do seu caso.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-brandBg p-8 rounded-2xl border-2 border-brandNeutral relative shadow-sm hover:border-brandAccent transition-colors">
+                    <span class="text-5xl font-serif font-bold text-brandGold/40 absolute top-4 right-6">02</span>
+                    <div class="w-12 h-12 rounded-xl bg-brandPrimary text-brandGold flex items-center justify-center font-bold text-lg mb-6 shadow-md">2</div>
+                    <h3 class="text-xl font-bold font-serif text-brandPrimary mb-2">Análise Estratégica</h3>
+                    <p class="text-sm text-brandMuted leading-relaxed">A Dra. Lilian analisa individualmente a sua situação e apresenta os caminhos jurídicos mais seguros e viáveis.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-brandBg p-8 rounded-2xl border-2 border-brandNeutral relative shadow-sm hover:border-brandAccent transition-colors">
+                    <span class="text-5xl font-serif font-bold text-brandGold/40 absolute top-4 right-6">03</span>
+                    <div class="w-12 h-12 rounded-xl bg-brandAccent text-white flex items-center justify-center font-bold text-lg mb-6 shadow-md">3</div>
+                    <h3 class="text-xl font-bold font-serif text-brandPrimary mb-2">Atuação & Acompanhamento</h3>
+                    <p class="text-sm text-brandMuted leading-relaxed">Assinatura digital de documentos com total validade jurídica e acompanhamento transparente de cada etapa.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Conteúdos Informativos -->
+    <section id="conteudos" class="py-20 bg-brandBg border-t border-brandNeutral/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brandAccent font-bold text-xs uppercase tracking-widest block mb-2">Orientação e Conhecimento</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brandPrimary">Conteúdos Informativos</h2>
+                </div>
+                <a href="https://instagram.com/linusjur" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 text-sm font-bold text-brandAccent hover:text-brandPrimary inline-flex items-center gap-1 transition">
+                    Ver publicações no Instagram @linusjur <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                </a>
+            </div>
+
+            <!-- Content Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Article Card 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden border-2 border-brandNeutral shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                    <div class="relative h-48 overflow-hidden bg-brandPrimary">
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" 
+                             onerror="this.src='https://placehold.co/600x350/0E303D/FFFFFF?text=Execu%C3%A7%C3%A3o+Fiscal'" 
+                             alt="Execução Fiscal e tributário" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandPrimary/20"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-bold text-brandAccent uppercase tracking-wider block mb-2">Execuções Fiscais</span>
+                            <h3 class="text-lg font-bold font-serif text-brandPrimary mb-2 leading-snug group-hover:text-brandAccent transition-colors">
+                                Fui notificado em uma Execução Fiscal: O que fazer primeiro?
+                            </h3>
+                            <p class="text-xs text-brandMuted line-clamp-3 mb-4 leading-relaxed">
+                                Entenda a importância de uma defesa técnica imediata para evitar bloqueios judiciais e proteger suas contas e bens.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Li%20o%20conte%C3%BAdo%20sobre%20Execu%C3%A7%C3%A3o%20Fiscal%20e%20gostaria%20de%20esclarecer%20uma%20d%C3%BAvida." target="_blank" class="text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider inline-flex items-center">
+                            Tirar Dúvidas sobre o tema <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article Card 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden border-2 border-brandNeutral shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                    <div class="relative h-48 overflow-hidden bg-brandPrimary">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" 
+                             onerror="this.src='https://placehold.co/600x350/0E303D/FFFFFF?text=Invent%C3%A1rio+e+Fam%C3%ADlia'" 
+                             alt="Inventários e Família" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandPrimary/20"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-bold text-brandAccent uppercase tracking-wider block mb-2">Família e Sucessões</span>
+                            <h3 class="text-lg font-bold font-serif text-brandPrimary mb-2 leading-snug group-hover:text-brandAccent transition-colors">
+                                Inventário em Cartório: Economia de tempo e recursos financeiros.
+                            </h3>
+                            <p class="text-xs text-brandMuted line-clamp-3 mb-4 leading-relaxed">
+                                Descubra em quais casos é possível realizar o inventário sem precisar passar pela demora do processo judicial tradicional.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Gostaria%20de%20saber%20se%20meu%20caso%20de%20Invent%C3%A1rio%20pode%20ser%20feito%20em%20cart%C3%B3rio." target="_blank" class="text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider inline-flex items-center">
+                            Tirar Dúvidas sobre o tema <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article Card 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden border-2 border-brandNeutral shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                    <div class="relative h-48 overflow-hidden bg-brandPrimary">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" 
+                             onerror="this.src='https://placehold.co/600x350/0E303D/FFFFFF?text=Ve%C3%ADculos+e+Leil%C3%B5es'" 
+                             alt="Veículos e Leilões" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brandPrimary/20"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-bold text-brandAccent uppercase tracking-wider block mb-2">Veículos e Consumidor</span>
+                            <h3 class="text-lg font-bold font-serif text-brandPrimary mb-2 leading-snug group-hover:text-brandAccent transition-colors">
+                                Arrematou veículo em leilão e travou na documentação?
+                            </h3>
+                            <p class="text-xs text-brandMuted line-clamp-3 mb-4 leading-relaxed">
+                                Veja os procedimentos necessários para destravar a regularização do bem arrematado e transferi-lo com segurança.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Preciso%20de%20ajuda%20para%20regularizar%20um%20ve%C3%ADculo%20de%20leil%C3%A3o." target="_blank" class="text-xs font-bold text-brandAccent group-hover:text-brandPrimary uppercase tracking-wider inline-flex items-center">
+                            Tirar Dúvidas sobre o tema <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Banner CTA -->
+    <section id="contato" class="py-20 bg-brandPrimary text-white relative overflow-hidden border-t border-brandGold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="bg-brandGold/20 text-brandGold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block mb-4 border border-brandGold/30">
+                Atendimento Direto com a Advogada
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-bold font-serif mb-4 leading-tight">Pronto para dar a direção correta ao seu caso?</h2>
+            <p class="text-white/80 max-w-2xl mx-auto mb-8 text-base font-normal leading-relaxed">
+                Fale diretamente com a Dra. Lilian Oliveira Nunes Manso. Atendimento individualizado, transparente e focado na proteção dos seus direitos.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20estrat%C3%A9gica%20do%20meu%20caso." target="_blank" rel="noopener noreferrer" class="cta-gradient hover:bg-brandAccentHover text-white px-8 py-4 rounded-xl font-bold transition shadow-xl flex items-center gap-3 text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Falar com a Advogada no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="bg-brandBg text-brandText pt-16 pb-12 border-t border-brandNeutral">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/logo.png"
+                             onerror="this.src='https://placehold.co/180x50/0E303D/C5A059?text=LINUS+JURIDICO'" 
+                             alt="Logo Linus Serviços Jurídicos" 
+                             class="h-20 w-auto object-contain rounded-lg border border-brandGold/40">
+                    </div>
+                    <p class="text-sm text-brandMuted leading-relaxed max-w-sm">
+                        Atuação estratégica na defesa de direitos e patrimônio. Atendimento 100% online com sede profissional em Goiânia / GO.
+                    </p>
+                    <p class="text-xs font-bold text-brandAccent">
+                        Dra. Lilian Oliveira Nunes Manso • OAB/GO nº 29.296
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="lg:col-span-3 space-y-3 text-sm">
+                    <h4 class="font-serif font-bold text-brandPrimary uppercase tracking-wider text-xs">Navegação</h4>
+                    <ul class="space-y-2 text-brandMuted font-medium">
+                        <li><a href="#inicio" class="hover:text-brandAccent transition">Início</a></li>
+                        <li><a href="#atuacao" class="hover:text-brandAccent transition">Áreas de Atuação</a></li>
+                        <li><a href="#sobre" class="hover:text-brandAccent transition">Sobre a Advogada</a></li>
+                        <li><a href="#conteudos" class="hover:text-brandAccent transition">Conteúdos Informativos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Contact Info -->
+                <div class="lg:col-span-4 space-y-3 text-sm">
+                    <h4 class="font-serif font-bold text-brandPrimary uppercase tracking-wider text-xs">Canais de Atendimento</h4>
+                    
+                    <div class="space-y-2.5 text-xs sm:text-sm">
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-brandAccent text-lg"></i>
+                            <a href="https://wa.me/5562994693150" target="_blank" class="hover:underline font-bold text-brandPrimary">(62) 99469-3150</a>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-instagram text-brandAccent text-lg"></i>
+                            <a href="https://instagram.com/linusjur" target="_blank" class="hover:underline text-brandMuted">@linusjur</a>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-regular fa-envelope text-brandPrimary text-base"></i>
+                            <span class="select-all text-brandMuted">linusjuridico@gmail.com</span>
+                        </p>
+                        <p class="flex items-center gap-2.5">
+                            <i class="fa-regular fa-envelope text-brandPrimary text-base"></i>
+                            <span class="select-all text-brandMuted">lilianjur@gmail.com</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Disclaimer & Copyright -->
+            <div class="pt-8 border-t border-brandNeutral flex flex-col md:flex-row items-center justify-between text-xs text-brandMuted gap-4">
+                <p>© <span id="year">2026</span> Linus Serviços Jurídicos. Todos os direitos reservados.</p>
+                <p class="text-center md:text-right">Este site atende aos preceitos do Código de Ética e Disciplina da OAB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Quick Button -->
+    <a href="https://wa.me/5562994693150?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 cta-gradient text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-all z-50 border-2 border-white" title="Conversar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Client-Side JavaScript -->
+    <script>
+        // Update Copyright Year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Toggle Mobile Navigation Drawer
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
